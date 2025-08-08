@@ -4,14 +4,14 @@ A powerful Retrieval-Augmented Generation API that answers questions from any do
 
 ## Features
 
-- 📄 **Multi-format Support**: PDF, DOCX, TXT, Images (OCR), CSV, SQLite
-- 🤖 **Free AI Models**: Uses Hugging Face transformers (no API keys!)
-- 🔍 **Smart Search**: FAISS vector similarity search
-- 👁️ **OCR Capability**: Extract text from images and scanned documents
-- 📚 **Multi-document**: Query across multiple uploaded files
-- 🎯 **Source Citations**: See exactly where answers come from
-- 🌐 **Web Interface**: Beautiful Streamlit UI included
-- 🐳 **Docker Ready**: One-command deployment
+- **Multi-format Support**: PDF, DOCX, TXT, Images (OCR), CSV, SQLite
+- **Free AI Models**: Uses Hugging Face transformers (no API keys!)
+- **Smart Search**: FAISS vector similarity search
+- **OCR Capability**: Extract text from images and scanned documents
+- **Multi-document**: Query across multiple uploaded files
+- **Source Citations**: See exactly where answers come from
+- **Web Interface**: Beautiful Streamlit UI included
+- **Docker Ready**: One-command deployment
 
 
 ### 1. Setup Environment
@@ -177,7 +177,7 @@ python test_api.py
 - "Summarize the methodology described"
 - "What are the recommendations?"
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -216,7 +216,7 @@ python test_api.py
    - Increase chunk overlap
    - Preprocess documents (clean formatting)
 
-## 📈 Scaling & Production
+## Scaling & Production
 
 ### Database Integration
 Replace FAISS with persistent vector databases:
@@ -234,11 +234,11 @@ Replace FAISS with persistent vector databases:
 - Sanitize file uploads
 - Add HTTPS in production
 
-## 📝 License
+## License
 
 MIT License - Feel free to use for any purpose!
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch
