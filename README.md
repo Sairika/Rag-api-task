@@ -1,8 +1,8 @@
-# 🤖 Smart RAG API - Completely Free Document Q&A System
+# Smart RAG API - Completely Free Document Q&A System
 
 A powerful Retrieval-Augmented Generation API that answers questions from any document type - PDFs, Word docs, images, databases - using **100% free, open-source models**!
 
-## ✨ Features
+## Features
 
 - 📄 **Multi-format Support**: PDF, DOCX, TXT, Images (OCR), CSV, SQLite
 - 🤖 **Free AI Models**: Uses Hugging Face transformers (no API keys!)
@@ -13,7 +13,6 @@ A powerful Retrieval-Augmented Generation API that answers questions from any do
 - 🌐 **Web Interface**: Beautiful Streamlit UI included
 - 🐳 **Docker Ready**: One-command deployment
 
-## 🚀 Quick Start (15 minutes)
 
 ### 1. Setup Environment
 ```bash
@@ -85,7 +84,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 streamlit run streamlit_app.py
 ```
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Upload Document
 ```bash
@@ -106,10 +105,10 @@ curl -X POST "http://localhost:8000/query" \
 ### API Documentation
 Visit: http://localhost:8000/docs
 
-## 🌐 Web Interface
+## Web Interface
 Visit: http://localhost:8501 for the Streamlit UI
 
-## 📊 Sample Usage
+## Sample Usage
 
 1. **Upload a PDF**: Use `/upload` endpoint or web interface
 2. **Get file ID**: API returns a unique file identifier  
@@ -132,25 +131,7 @@ Visit: http://localhost:8501 for the Streamlit UI
   "confidence": 0.85
 }
 ```
-
-## 🐳 Docker Deployment
-
-### Option 1: Simple Docker
-```bash
-# Build image
-docker build -t rag-api .
-
-# Run container
-docker run -p 8000:8000 -v $(pwd)/uploads:/app/uploads -v $(pwd)/vector_db:/app/vector_db rag-api
-```
-
-### Option 2: Docker Compose
-```bash
-docker-compose up --build
-```
-This starts both API (port 8000) and UI (port 8501).
-
-## 🧪 Testing
+## Testing
 
 ### Test with cURL
 ```bash
@@ -245,7 +226,6 @@ Replace FAISS with persistent vector databases:
 
 ### Model Upgrades
 - **Better embeddings**: `all-mpnet-base-v2`
-- **Larger LLM**: `microsoft/DialoGPT-large`
 - **Specialized models**: Domain-specific transformers
 
 ### Security Considerations
@@ -274,14 +254,3 @@ MIT License - Feel free to use for any purpose!
 - Check console logs for errors
 
 ---
-
-## 🎯 Evaluation Criteria Coverage
-
-- ✅ **File parsing (20%)**: PDF, DOCX, TXT, Images, CSV, SQLite
-- ✅ **Vector search (20%)**: FAISS with sentence-transformers
-- ✅ **OCR handling (15%)**: Tesseract integration
-- ✅ **API design (15%)**: Clean FastAPI with documentation
-- ✅ **LLM integration (15%)**: Free Hugging Face models
-- ✅ **Bonus features (15%)**: Streamlit UI, Docker, multi-document
-
-**Total: 100% coverage with free, production-ready implementation!** 🚀
