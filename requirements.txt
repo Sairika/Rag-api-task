@@ -1,0 +1,27 @@
+# FastAPI and server
+fastapi
+uvicorn[standard]
+python-multipart
+
+# AI/ML Core
+torch
+transformers
+sentence-transformers
+faiss-cpu
+numpy
+huggingface_hub
+
+# Document processing
+PyMuPDF
+python-docx
+Pillow
+pandas
+tesseract
+
+# Utilities
+python-dotenv
+pydantic
+
+# Web interface (optional)
+streamlit
+requests
